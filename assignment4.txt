@@ -1,0 +1,30 @@
+Assignment	4
+Due	(by	email)	before	class	on	Tuesday,	February	23th.
+Continuing	with	the	code	you	developed	for	assignment	3…
+As	a	separate	module,	and	in	a	separate	source	file,	design	and	implement	a	hash	
+table	facility.		This	module	should	have	the	following	characteristics:
+1) Permit	the	user	to	insert	a	key/value	pair.
+2) Permit	the	user	to	search	for	and	obtain	the	value	associated	with	a	key.
+3) The	module	can	expect	all	keys	to	be	strings.
+4) The	module	should	support	a	pointer	to	anything as	a	value	(think	void*)
+5) Permit	the	user	to	apply	a	function	to	every	key/value	pair	in	the	table.
+6) Provide	a	method	for	freeing	the	heap	allocated	memory	used	by	the	table.
+7) Use	the	technique	known	as	separate	chaining to	deal	with	hash	table	
+collisions.
+8) Do	a	bit	of	online research	to	find	a	reasonable	hashing	algorithm.
+Your	hash	table	facility	should	reside	in	its	own	source	file	with	a	corresponding	
+header	file	containing	the	declarations	associated	with	the	interface	to	the	facility.
+The	next	phase	of	this	assignment	thread	will	be	to	have	the	size	of	the	hash	table	
+grow	transparently	in	order	to	maintain	a	high	search	speed.		While	this	is	not	a	
+current	requirement,	you	would	be	well	advised	to	consider	how	you	would
+implement	feature this	as	you	design	your	hash	table.
+Re-write	your	word	counting	program	to	use	the	hash	table	facility	rather	than	the	
+linear	linked	list	of	the	last	assignment.		In	this	case,	the	value	associated	with	a	key	
+(word),	will	be	a	pointer	to	an	integer.		If	an	incoming	word	is	found	with	a	search	of	
+the	hash	table,	then	the	associated	integer	will	be	incremented.		If	the	incoming	
+word	is	not	found,	then	a	new	key/value	pair	will	be	inserted	in	the	hash	table	with	
+an	integer	count	of	one.		To	print	the	contents	of	the	table,	you	will	want	to	apply	a	
+print	function	to	the	hash	table.
+Write	a	makefile	for	your	program	which	(by	default)	builds	an	executable	for	this	
+program.		Package	up	your	source	files	and	makefile	in	a	tar-ball	and	attach	it	to	an	
+email	to	submit	this	assignment	(do	not	include	derived	files	in	your	tar-ball).
